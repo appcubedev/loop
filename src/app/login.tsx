@@ -13,10 +13,8 @@ export default function login() {
 
 	const configureGoogleSignIn = async () => {
 		await GoogleSignin.configure({
-			webClientId:
-				"592349431198-r5rlemgt5nn2usqppf7370k2d9fmq7ut.apps.googleusercontent.com",
-			iosClientId:
-				"592349431198-p3a3dljocnaen0tg06lj56ijvm0j0dot.apps.googleusercontent.com",
+			webClientId: process.env.EXPO_PUBLIC_FIREBASE_WEB_CLIENT_ID,
+			iosClientId: process.env.EXPO_PUBLIC_FIREBASE_IOS_CLIENT_ID,
 		});
 	};
 
