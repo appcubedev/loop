@@ -1,3 +1,7 @@
+export const colors = {
+	brand: "#1fcf7a",
+};
+
 export const avatarColors: any = {
 	A: "#FF5733",
 	B: "#FFA533",

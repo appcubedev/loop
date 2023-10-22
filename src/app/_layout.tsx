@@ -48,5 +48,5 @@ const App = ({ children }: any) => {
 		if (initializing) setInitializing(false);
 	}
 
-	return <View>{children}</View>;
+	return <View className="flex-1">{children}</View>;
 };
